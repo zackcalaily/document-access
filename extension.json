@@ -1,0 +1,6 @@
+{
+  "id": "document-access",
+  "name": "Document Access",
+  "srcdoc": "./dist/document-access/index.html",
+  "fieldTypes": ["Object"]
+}

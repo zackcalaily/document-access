@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build && contentful extension update --src https://zackcalaily.github.io/document-access --force"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,8 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "contentful-cli": "^0.36.0",
+    "gh-pages": "^2.1.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
